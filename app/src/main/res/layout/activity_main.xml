@@ -1,0 +1,80 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity">
+
+    <ImageView
+        android:id="@+id/imageView3"
+        android:layout_width="422dp"
+        android:layout_height="769dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:srcCompat="@drawable/logo_background"
+        tools:layout_editor_absoluteX="-6dp" />
+
+    <ImageView
+        android:id="@+id/imageView2"
+        android:layout_width="213dp"
+        android:layout_height="191dp"
+        android:layout_marginTop="77dp"
+        app:layout_constraintEnd_toStartOf="@+id/imageView3"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toEndOf="@+id/imageView3"
+        app:layout_constraintTop_toTopOf="parent"
+        app:srcCompat="@drawable/logo" />
+
+    <Button
+        android:id="@+id/button"
+        android:layout_width="215dp"
+        android:layout_height="55dp"
+        android:layout_marginTop="338dp"
+        android:text="LOGIN AS CLIENT"
+        android:textColor="#000000"
+        app:backgroundTint="#D9D9D9D9"
+        app:layout_constraintEnd_toStartOf="@+id/imageView3"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toEndOf="@+id/imageView3"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <Button
+        android:id="@+id/button2"
+        android:layout_width="215dp"
+        android:layout_height="54dp"
+        android:layout_marginTop="393dp"
+        android:text="LOGIN AS DRIVER"
+        android:textColor="#000000"
+        app:backgroundTint="#D9D9D9D9"
+        app:layout_constraintEnd_toStartOf="@+id/imageView3"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toEndOf="@+id/imageView3"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <Button
+        android:id="@+id/button3"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="527dp"
+        android:text="Signup as CLient"
+        android:textColor="#000000"
+        app:backgroundTint="#D9D9D9D9"
+        app:layout_constraintEnd_toStartOf="@+id/imageView3"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toEndOf="@+id/imageView3"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <Button
+        android:id="@+id/button5"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="575dp"
+        android:text="Signup as Driver"
+        android:textColor="#000000"
+        app:backgroundTint="#D9D9D9D9"
+        app:layout_constraintEnd_toStartOf="@+id/imageView3"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toEndOf="@+id/imageView3"
+        app:layout_constraintTop_toTopOf="parent" />
+</androidx.constraintlayout.widget.ConstraintLayout>
