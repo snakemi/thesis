@@ -3,16 +3,8 @@
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
-    android:layout_height="match_parent">
-
-    <ImageView
-        android:id="@+id/imageView7"
-        android:layout_width="416dp"
-        android:layout_height="750dp"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent"
-        app:srcCompat="@drawable/logo_background" />
+    android:layout_height="match_parent"
+    android:background="@drawable/logo_background">
 
     <TextView
         android:id="@+id/textView2"
@@ -84,6 +76,7 @@
         android:layout_marginStart="30dp"
         android:layout_marginTop="492dp"
         android:text="Passenger Count:"
+        android:textSize="25sp"
         android:textAppearance="@style/TextAppearance.AppCompat.Large"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent" />
@@ -104,10 +97,11 @@
         android:id="@+id/textView15"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginStart="99dp"
-        android:layout_marginTop="600dp"
+        android:layout_marginStart="68dp"
+        android:layout_marginTop="592dp"
         android:text="Camera"
         android:textAppearance="@style/TextAppearance.AppCompat.Large"
+        android:textSize="25sp"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent" />
 
@@ -118,8 +112,8 @@
         android:layout_marginStart="184dp"
         android:layout_marginTop="592dp"
         android:text="Connect"
-        android:textColor="#000000"
-        app:backgroundTint="#D9D9D9D9"
+        android:textColor="#FFFFFF"
+        app:backgroundTint="#0000FF"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent" />
 </androidx.constraintlayout.widget.ConstraintLayout>
