@@ -1,0 +1,47 @@
+{
+  "project_info": {
+    "project_number": "936102169170",
+    "project_id": "xpressjeep",
+    "storage_bucket": "xpressjeep.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:936102169170:android:d76549ff8f638eab586d8b",
+        "android_client_info": {
+          "package_name": "com.example.xpressjeepdashboard"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "936102169170-jjsd8rsalr0audfg83u1gll625siqpcf.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.example.xpressjeepdashboard",
+            "certificate_hash": "0e05cbbf719a562f6d3fa0d69b967a3f901131f2"
+          }
+        },
+        {
+          "client_id": "936102169170-hkubhn0p4658vtgbdqpmp1t636dcn6ki.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyCPcbvAzYQha2hcYEkA3j-ggOciCOAQoHk"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "936102169170-hkubhn0p4658vtgbdqpmp1t636dcn6ki.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
