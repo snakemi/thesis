@@ -19,7 +19,7 @@ public class ViewMap extends AppCompatActivity implements OnMapReadyCallback {
     protected void onCreate(Bundle savedInstanceState) {
 
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.view_map);
+        setContentView(R.layout.view_map);//motherfucker i forgot how to do it hangon
         SupportMapFragment mapFragment = (SupportMapFragment) getSupportFragmentManager().findFragmentById(R.id.maps);
         mapFragment.getMapAsync(this);
         findNearbyBtn = findViewById(R.id.button8);
