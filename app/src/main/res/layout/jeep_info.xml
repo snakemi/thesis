@@ -4,7 +4,7 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:background="@drawable/logo_background">
+    android:background="@drawable/logobackground7">
 
     <TextView
         android:id="@+id/textView2"
@@ -12,10 +12,11 @@
         android:layout_height="73dp"
         android:layout_marginStart="52dp"
         android:layout_marginTop="81dp"
-        android:background="#D9D9D9D9"
+        android:background="#2196F3"
         android:text="Jeep Info"
         android:textAlignment="center"
         android:textAppearance="@style/TextAppearance.AppCompat.Display3"
+        android:textColor="#000000"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent" />
 
@@ -26,17 +27,18 @@
         android:layout_marginStart="157dp"
         android:layout_marginTop="194dp"
         android:text="Driver:"
+        android:textColor="#000000"
         android:textAppearance="@style/TextAppearance.AppCompat.Display1"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent" />
 
     <TextView
-        android:id="@+id/textView10"
-        android:layout_width="177dp"
-        android:layout_height="29dp"
-        android:layout_marginStart="117dp"
-        android:layout_marginTop="269dp"
-        android:background="#D9D9D9D9"
+        android:id="@+id/viewDriverName"
+        android:layout_width="244dp"
+        android:layout_height="41dp"
+        android:layout_marginStart="80dp"
+        android:layout_marginTop="264dp"
+        android:background="#2196F3"
         android:text="drivername"
         android:textAlignment="center"
         android:textAppearance="@style/TextAppearance.AppCompat.Body2"
@@ -48,11 +50,12 @@
         android:id="@+id/textView11"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginStart="132dp"
-        android:layout_marginTop="323dp"
+        android:layout_marginStart="36dp"
+        android:layout_marginTop="380dp"
         android:background="#0D9D9D9D"
-        android:text="Plate No.:"
+        android:text="Plate #:"
         android:textAppearance="@style/TextAppearance.AppCompat.Display1"
+        android:textColor="#000000"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent" />
 
@@ -60,35 +63,35 @@
         android:id="@+id/textView12"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginStart="158dp"
-        android:layout_marginTop="395dp"
-        android:background="#D9D9D9D9"
+        android:layout_marginStart="156dp"
+        android:layout_marginTop="380dp"
+        android:background="#2196F3"
         android:text="ABC 123"
         android:textAppearance="@style/TextAppearance.AppCompat.Body2"
-        android:textSize="24sp"
+        android:textSize="35sp"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent" />
 
     <TextView
         android:id="@+id/textView13"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_marginStart="30dp"
-        android:layout_marginTop="492dp"
+        android:layout_width="121dp"
+        android:layout_height="71dp"
+        android:layout_marginStart="32dp"
+        android:layout_marginTop="464dp"
         android:text="Passenger Count:"
-        android:textSize="25sp"
         android:textAppearance="@style/TextAppearance.AppCompat.Large"
+        android:textSize="25sp"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent" />
 
     <TextView
         android:id="@+id/textView14"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_marginStart="253dp"
-        android:layout_marginTop="474dp"
-        android:background="#D9D9D9D9"
-        android:text="0/20"
+        android:layout_width="134dp"
+        android:layout_height="66dp"
+        android:layout_marginStart="168dp"
+        android:layout_marginTop="464dp"
+        android:background="#2196F3"
+        android:text="23/20"
         android:textSize="48sp"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent" />
@@ -106,7 +109,7 @@
         app:layout_constraintTop_toTopOf="parent" />
 
     <Button
-        android:id="@+id/button9"
+        android:id="@+id/cameraView"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginStart="184dp"
