@@ -4,6 +4,12 @@
     package="com.example.xpressjeepdashboard">
 
     <uses-permission android:name="android.permission.CAMERA" />
+    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
+    <uses-permission android:name="android.permission.ACCESS_FINE_LOCATION"/>
+    <uses-permission android:name="android.permission.ACCESS_COARSE_LOCATION"/>
+    <uses-permission android:name="com.google.android.providers.gsf.permission.READ_GSERVICES"/>
+
 
 
     <uses-feature
@@ -29,13 +35,8 @@
         android:supportsRtl="true"
         android:theme="@style/Theme.XPRESSJeepDashboard"
         tools:targetApi="31">
-        <activity
-            android:name=".OpenCV_Camera"
-            android:exported="false">
-            <meta-data
-                android:name="android.app.lib_name"
-                android:value="" />
-        </activity>
+
+
         <activity
             android:name=".PopupWindow"
             android:exported="false"
