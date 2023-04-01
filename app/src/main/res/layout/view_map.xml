@@ -6,7 +6,6 @@
     android:layout_height="match_parent">
 
     <ImageView
-        android:id="@+id/imageView5"
         android:layout_width="418dp"
         android:layout_height="746dp"
         app:layout_constraintBottom_toBottomOf="parent"

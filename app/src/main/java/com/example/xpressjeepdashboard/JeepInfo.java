@@ -36,7 +36,6 @@ public class JeepInfo extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.jeep_info);
 
-        cameraViews = findViewById(R.id.cameraView);
         // below line is used to get the instance
         // of our Firebase database.
         firebaseDatabase = FirebaseDatabase.getInstance();
@@ -55,14 +54,6 @@ public class JeepInfo extends AppCompatActivity {
         // for getting data.
         getPassengerCount();
         getLicensePlate();
-        cameraViews.setOnClickListener(new View.OnClickListener() {
-
-            @Override
-            public void onClick(View view) {
-
-
-            }
-        });
     }
     private void getPassengerCount() {
 

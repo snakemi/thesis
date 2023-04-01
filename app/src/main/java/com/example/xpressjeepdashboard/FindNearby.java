@@ -47,7 +47,7 @@ public class FindNearby extends AppCompatActivity implements OnMapReadyCallback{
             public void onClick(View view) {
                 openPopupWindow();
             }
-        });//yung parang ganto sa code na to pag pinindot yung "Find Nearby" na button mapupunta sa bagong Activity/Class wait
+        });
 
     }
 
@@ -56,12 +56,10 @@ public class FindNearby extends AppCompatActivity implements OnMapReadyCallback{
         nMap = googleMap;
         for (int i =0;i<arrayList.size();i++){
             nMap.addMarker(new MarkerOptions().position(arrayList.get(i)).title("Marker"));
-            nMap.animateCamera(CameraUpdateFactory.zoomTo(15.0f));// the fock is dat
+            nMap.animateCamera(CameraUpdateFactory.zoomTo(15.0f));
             nMap.moveCamera(CameraUpdateFactory.newLatLng(arrayList.get(i)));
         }
     }
-//moment of truth
-    //it fockin work HAHAHHAHAAH fucking shit
 
     private void openPopupWindow(){
         Intent popupwindow = new Intent(FindNearby.this, PopupWindow.class);
