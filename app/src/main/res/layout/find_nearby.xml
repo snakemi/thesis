@@ -7,7 +7,6 @@
     android:background="@drawable/logo_background">
 
     <ImageView
-        android:id="@+id/imageView9"
         android:layout_width="518dp"
         android:layout_height="862dp"
         android:src="@drawable/map"
