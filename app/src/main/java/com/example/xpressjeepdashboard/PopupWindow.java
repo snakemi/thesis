@@ -87,6 +87,7 @@ public class PopupWindow extends AppCompatActivity {
                 // after getting the value we are setting
                 // our value to our text view in below line.
                 passengerText.setText(String.valueOf(value));
+
             }
 
             @Override
@@ -115,6 +116,7 @@ public class PopupWindow extends AppCompatActivity {
                 // after getting the value we are setting
                 // our value to our text view in below line.
                 licensePlateText.setText(value);
+
             }
 
             @Override
