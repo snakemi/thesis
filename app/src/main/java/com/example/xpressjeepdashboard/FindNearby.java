@@ -65,11 +65,6 @@ public class FindNearby extends AppCompatActivity implements OnMapReadyCallback{
 
 
     ArrayList<LatLng> arrayList = new ArrayList<com.google.android.gms.maps.model.LatLng>();
-    public com.google.android.gms.maps.model.LatLng mainuc = new com.google.android.gms.maps.model.LatLng(16.40882770206025, 120.59780492089425);
-    public com.google.android.gms.maps.model.LatLng uc = new com.google.android.gms.maps.model.LatLng(16.408742763023348, 120.59805698058953);
-    public com.google.android.gms.maps.model.LatLng front = new com.google.android.gms.maps.model.LatLng(16.40799660175582, 120.59824205300256);
-    public com.google.android.gms.maps.model.LatLng back = new com.google.android.gms.maps.model.LatLng(16.409306325909583, 120.59727092423904);
-
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -96,9 +91,6 @@ public class FindNearby extends AppCompatActivity implements OnMapReadyCallback{
         SupportMapFragment mapFragment = (SupportMapFragment) getSupportFragmentManager().findFragmentById(R.id.map);
         mapFragment.getMapAsync(this);
         //arrayList.add(driver);
-        arrayList.add(uc);
-        arrayList.add(front);
-        arrayList.add(back);
 
         popupButton = findViewById(R.id.button10);
 
