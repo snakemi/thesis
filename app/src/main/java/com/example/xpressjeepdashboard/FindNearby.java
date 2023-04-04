@@ -92,7 +92,7 @@ public class FindNearby extends AppCompatActivity implements OnMapReadyCallback{
         System.out.println(latitude);
         System.out.println(longtitude);
 
-        com.google.android.gms.maps.model.LatLng driver = new LatLng(latitude,longtitude);
+        //com.google.android.gms.maps.model.LatLng driver = new LatLng(latitude,longtitude);
         SupportMapFragment mapFragment = (SupportMapFragment) getSupportFragmentManager().findFragmentById(R.id.map);
         mapFragment.getMapAsync(this);
         //arrayList.add(driver);
@@ -108,7 +108,7 @@ public class FindNearby extends AppCompatActivity implements OnMapReadyCallback{
                 openPopupWindow();
             }
         });
-
+        getJeepLoc();
     }
     @Override
     public void onPause() {
@@ -144,7 +144,7 @@ public class FindNearby extends AppCompatActivity implements OnMapReadyCallback{
             nMap.setMyLocationEnabled(true);
         }
 
-        LatLng location = new LatLng(latitude, longtitude);
+        //LatLng location = new LatLng(latitude, longtitude);
         //nMap.addMarker(new MarkerOptions().position(location).title("Marker"));
         for (int i =0;i<arrayList.size();i++){
             nMap.addMarker(new MarkerOptions().position(arrayList.get(i)).title("Marker"));
@@ -310,6 +310,24 @@ public class FindNearby extends AppCompatActivity implements OnMapReadyCallback{
                 Toast.makeText(FindNearby.this, "Fail to get data.", Toast.LENGTH_SHORT).show();
             }
         });
+    }
+    private void getJeepLoc(){
+        loc = firebaseDatabase.getReference("Users/Jeepney/Location/");
+        loc.addValueEventListener(new ValueEventListener() {
+            @Override
+            public void onDataChange(@NonNull DataSnapshot snapshot) {
+                latitude = snapshot.child("latitude").getValue(Double.class);
+                longtitude = snapshot.child("longitude").getValue(Double.class);
+                LatLng latLng = new LatLng(latitude, longtitude);
+                nMap.addMarker(new MarkerOptions().position(latLng).title("ABC123"));
+            }
+
+            @Override
+            public void onCancelled(@NonNull DatabaseError error) {
+
+            }
+        });
+
     }
     private void readData(FirebaseCallback firebaseCallback){
         latitudeDB.addValueEventListener(new ValueEventListener() {
