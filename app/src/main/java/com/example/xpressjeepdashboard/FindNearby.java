@@ -310,6 +310,7 @@ public class FindNearby extends AppCompatActivity implements OnMapReadyCallback{
             public void onDataChange(@NonNull DataSnapshot snapshot) {
                 latitude = snapshot.child("latitude").getValue(Double.class);
                 longtitude = snapshot.child("longitude").getValue(Double.class);
+                nMap.clear();
                 LatLng latLng = new LatLng(latitude, longtitude);
                 nMap.addMarker(new MarkerOptions().position(latLng).title("ABC123"));
             }
