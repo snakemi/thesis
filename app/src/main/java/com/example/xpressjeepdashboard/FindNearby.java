@@ -148,7 +148,7 @@ public class FindNearby extends AppCompatActivity implements OnMapReadyCallback{
         //nMap.addMarker(new MarkerOptions().position(location).title("Marker"));
         for (int i =0;i<arrayList.size();i++){
             nMap.addMarker(new MarkerOptions().position(arrayList.get(i)).title("Marker"));
-            nMap.animateCamera(CameraUpdateFactory.zoomTo(15.0f));
+            nMap.animateCamera(CameraUpdateFactory.zoomTo(20.0f));
             nMap.moveCamera(CameraUpdateFactory.newLatLng(arrayList.get(i)));
         }
     }
@@ -174,7 +174,7 @@ public class FindNearby extends AppCompatActivity implements OnMapReadyCallback{
                 //mCurrLocationMarker = nMap.addMarker(markerOptions);
 
                 //move map camera
-                nMap.moveCamera(CameraUpdateFactory.newLatLngZoom(latLng, 11));
+                nMap.moveCamera(CameraUpdateFactory.newLatLngZoom(latLng, 14));
             }
         }
     };

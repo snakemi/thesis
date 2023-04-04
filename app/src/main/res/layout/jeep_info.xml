@@ -7,11 +7,11 @@
     android:background="@drawable/logobackground7">
 
     <TextView
+        android:id="@+id/textView"
         android:layout_width="297dp"
         android:layout_height="73dp"
         android:layout_marginStart="52dp"
         android:layout_marginTop="81dp"
-        android:background="#2196F3"
         android:text="Jeep Info"
         android:textAlignment="center"
         android:textAppearance="@style/TextAppearance.AppCompat.Display3"
@@ -30,12 +30,24 @@
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent" />
 
+    <ImageView
+        android:id="@+id/imageView4"
+        android:layout_width="296dp"
+        android:layout_height="419dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.773"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.237"
+        app:srcCompat="@drawable/aaaaaaasd" />
+
     <TextView
+        android:id="@+id/textView2"
         android:layout_width="244dp"
         android:layout_height="41dp"
         android:layout_marginStart="80dp"
         android:layout_marginTop="264dp"
-        android:background="#2196F3"
         android:text="drivername"
         android:textAlignment="center"
         android:textAppearance="@style/TextAppearance.AppCompat.Body2"
